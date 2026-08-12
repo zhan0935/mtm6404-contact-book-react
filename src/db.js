@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
-// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDucAV-exc_TRITDRkgYfYpVFrI-rqYsY8",
   authDomain: "mtm6404-contact-book-2d8d7.firebaseapp.com",
@@ -11,11 +10,8 @@ const firebaseConfig = {
   appId: "1:731314457620:web:be455645802cd45124ab01"
 };
 
-// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-// Initialize Cloud Firestore
 const db = getFirestore(app);
 
-// Export Firestore database
 export default db;
